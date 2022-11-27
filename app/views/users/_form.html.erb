@@ -1,0 +1,17 @@
+<%= form_for @user do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.label :password %>
+  <%= f.text_field :password %>
+
+  <%= f.label :created_at %>
+  <%= f.text_field :created_at %>
+
+  <%= check_box_tag :should_stay, true, @checked %>
+
+  <%= f.submit %>
+<% end %>
